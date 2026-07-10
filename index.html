@@ -272,6 +272,9 @@
     .hero-grid{grid-template-columns:1fr; gap:64px;}
     .hero-photo-wrap{order:-1;}
   }
+.tally-form{width:100%;max-width:700px;margin:0 auto;}
+.tally-form iframe{width:100%!important;min-height:700px;border:none;}
+@media(max-width:768px){.tally-form iframe{min-height:1100px;}html,body{overflow-x:hidden;width:100%;}}
 </style>
 </head>
 <body>
@@ -619,7 +622,8 @@
         <p style="color:var(--slate); margin-top:16px; max-width:420px;">Whether it is an overflowing inbox, a calendar nobody trusts, or a CRM that has not been touched in months, tell me where things stand and I will tell you exactly how I can help.</p>
       </div>
       <div>
-        <iframe
+        <div class="tally-form">
+<iframe
           src="https://tally.so/r/MeyjkA"
           width="100%"
           height="650"
@@ -628,7 +632,8 @@
           marginwidth="0"
           title="Contact Deborah">
         </iframe>
-        <p class="submit-note">Complete the form above and I'll get back to you in less than 2 hours.</p>
+</div>
+        <p class="submit-note">Complete the form above and I'll get back to you within 24–48 hours.</p>
       </div>
     </div>
   </div>
